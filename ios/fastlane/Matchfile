@@ -1,0 +1,12 @@
+git_url('https://github.com/tomokisun/certificates.git')
+
+storage_mode('git')
+
+type('development')
+
+app_identifier([
+  'tokyo.gajo.app.ios.nererun',
+  'xyz.tomokisun.nererun.staging',
+])
+
+username('developertomokisun@gmail.com')

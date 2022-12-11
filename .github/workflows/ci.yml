@@ -1,0 +1,22 @@
+name: push
+
+on: push
+
+jobs:
+  analyze:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: ./.github/workflows/scripts/install-flutter.sh 3.3.8
+      - run: ./.github/workflows/scripts/install-tools.sh
+      - run: flutter pub get
+      - run: flutter analyze
+  codegen:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: ./.github/workflows/scripts/install-flutter.sh 3.3.8
+    - run: ./.github/workflows/scripts/install-tools.sh
+    - run: flutter pub get
+    - run: make generate
+    - run: git diff --quiet --exit-code

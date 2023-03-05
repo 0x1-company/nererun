@@ -1,14 +1,14 @@
-# ネレルンとは
+# What is nererun
 
 <img width="320px" src="./icon.png" />
 
-ネレルンは、お子さんを対象とした「寝かしつけ」に特化した音声アプリです。
+nererun is a voice application specialized in "sleep training" for children.
 
-音声ストーリーは科学的根拠に基づき制作しており、なかなか寝付けないお子さんでも、眠りに誘うことができます。
+The audio stories are produced based on scientific evidence and can lull even children who have difficulty falling asleep to sleep.
 
-# リンク
+# Links
 
-- [ホームページ](https://nererunkids.studio.site/)
+- [homepage](https://nererunkids.studio.site/)
 
 - [AppStore](https://apps.apple.com/us/app/id1591420871)
 

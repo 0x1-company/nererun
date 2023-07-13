@@ -819,8 +819,6 @@ PODS:
   - PurchasesCoreSwift (3.13.1)
   - PurchasesHybridCommon (1.11.1):
     - Purchases (= 3.13.1)
-  - shared_preferences_ios (0.0.1):
-    - Flutter
   - url_launcher_ios (0.0.1):
     - Flutter
 
@@ -840,7 +838,6 @@ DEPENDENCIES:
   - package_info_plus (from `.symlinks/plugins/package_info_plus/ios`)
   - path_provider_ios (from `.symlinks/plugins/path_provider_ios/ios`)
   - purchases_flutter (from `.symlinks/plugins/purchases_flutter/ios`)
-  - shared_preferences_ios (from `.symlinks/plugins/shared_preferences_ios/ios`)
   - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
 
 SPEC REPOS:
@@ -902,8 +899,6 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/path_provider_ios/ios"
   purchases_flutter:
     :path: ".symlinks/plugins/purchases_flutter/ios"
-  shared_preferences_ios:
-    :path: ".symlinks/plugins/shared_preferences_ios/ios"
   url_launcher_ios:
     :path: ".symlinks/plugins/url_launcher_ios/ios"
 
@@ -948,7 +943,6 @@ SPEC CHECKSUMS:
   purchases_flutter: 214d452aaf860496aeee822487eafcdd962fab33
   PurchasesCoreSwift: ca55f9ef671f89abed133775dd9e53f55007828d
   PurchasesHybridCommon: a0313de4f31fbaf137518b2686ccdca4c91dd2b4
-  shared_preferences_ios: 548a61f8053b9b8a49ac19c1ffbc8b92c50d68ad
   url_launcher_ios: 839c58cdb4279282219f5e248c3321761ff3c4de
 
 PODFILE CHECKSUM: ca80d698c10e703554023a6beecb3beac55a9d21

@@ -395,7 +395,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AV9FQ3YF56;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Runner/Info-staging.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -530,7 +530,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AV9FQ3YF56;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Runner/Info-staging.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,7 +561,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AV9FQ3YF56;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Runner/Info-release.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

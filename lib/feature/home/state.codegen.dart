@@ -1,3 +1,4 @@
+import 'package:app_review/app_review.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:nererun/entity/product.dart';
 import 'package:nererun/entity/top_banner_setting.dart';
@@ -23,6 +24,12 @@ class HomeState with _$HomeState {
   HomeState._();
 }
 
+final reviewRequestProvider = FutureProvider((ref) async {
+  final value = await AppReview.requestReview;
+  print('AppReview.requestReview : $value');
+  return value;
+});
+
 final homeAsyncStateProvider =
     Provider.autoDispose<AsyncValue<HomeState>>((ref) {
   ref.watch(userStreamProvider);
@@ -39,6 +46,8 @@ final homeAsyncStateProvider =
       .productIDs
       .map((id) => products.firstWhere((p) => p.id == id))
       .toList();
+
+  ref.read(reviewRequestProvider);
 
   return AsyncValue.data(HomeState(
     topBannerSettings: topBannerSettings,

@@ -61,13 +61,13 @@ class _AboutScreen extends StatelessWidget {
           }),
           _clickContent('利用規約', (context) async {
             await launchUrlString(
-              'https://one-inc.notion.site/32feafccb1c94a8bb363f9c3e06ea851',
+              'https://caaaption.notion.site/32feafccb1c94a8bb363f9c3e06ea851',
               mode: LaunchMode.externalApplication,
             );
           }),
           _clickContent('プライバシーポリシー', (context) async {
             await launchUrlString(
-              'https://one-inc.notion.site/2db6971f85214026a46f9d9f55b632f6',
+              'https://caaaption.notion.site/2db6971f85214026a46f9d9f55b632f6',
               mode: LaunchMode.externalApplication,
             );
           }),

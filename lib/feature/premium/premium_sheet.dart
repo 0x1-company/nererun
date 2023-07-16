@@ -80,7 +80,7 @@ class _PremiumSheet extends StatelessWidget {
                 onTap: (_) => store.asyncAction.purchase(),
               ),
             ),
-            const SizedBox(height: 80),
+            const SizedBox(height: 40),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Text(

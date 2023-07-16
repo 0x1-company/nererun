@@ -59,6 +59,12 @@ class _AboutScreen extends StatelessWidget {
               mode: LaunchMode.externalApplication,
             );
           }),
+          _clickContent('公式サイト', (context) async {
+            await launchUrlString(
+              'https://nererunkids.studio.site',
+              mode: LaunchMode.externalApplication,
+            );
+          }),
           _clickContent('利用規約', (context) async {
             await launchUrlString(
               'https://caaaption.notion.site/32feafccb1c94a8bb363f9c3e06ea851',

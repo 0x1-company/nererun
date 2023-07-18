@@ -1,4 +1,5 @@
 import 'package:app_review/app_review.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:nererun/entity/product.dart';
 import 'package:nererun/entity/top_banner_setting.dart';
@@ -30,6 +31,18 @@ final reviewRequestProvider = FutureProvider((ref) async {
   return value;
 });
 
+final requestPushNotificationPermissionProvider = FutureProvider(
+  (ref) async => FirebaseMessaging.instance.requestPermission(
+    alert: true,
+    announcement: false,
+    badge: false,
+    carPlay: false,
+    criticalAlert: false,
+    provisional: false,
+    sound: true,
+  ),
+);
+
 final homeAsyncStateProvider =
     Provider.autoDispose<AsyncValue<HomeState>>((ref) {
   ref.watch(userStreamProvider);
@@ -47,6 +60,7 @@ final homeAsyncStateProvider =
       .map((id) => products.firstWhere((p) => p.id == id))
       .toList();
 
+  ref.read(requestPushNotificationPermissionProvider);
   ref.read(reviewRequestProvider);
 
   return AsyncValue.data(HomeState(

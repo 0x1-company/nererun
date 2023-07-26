@@ -67,13 +67,13 @@ class _AboutScreen extends StatelessWidget {
           }),
           _clickContent('利用規約', (context) async {
             await launchUrlString(
-              'https://caaaption.notion.site/32feafccb1c94a8bb363f9c3e06ea851',
+              'https://one-inc.gitbook.io/nererun/gui-yao/li-yong-gui-yao',
               mode: LaunchMode.externalApplication,
             );
           }),
           _clickContent('プライバシーポリシー', (context) async {
             await launchUrlString(
-              'https://caaaption.notion.site/2db6971f85214026a46f9d9f55b632f6',
+              'https://one-inc.gitbook.io/nererun/gui-yao/ge-ren-qing-bao-bao-hu-fang-zhen',
               mode: LaunchMode.externalApplication,
             );
           }),

@@ -1,6 +1,10 @@
 name: push
 
-on: push
+on:
+  workflow_dispatch:
+  push:
+    paths-ignore:
+      - 'docs'
 
 jobs:
   analyze:

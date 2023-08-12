@@ -3,9 +3,10 @@ name: main
 on:
   workflow_dispatch:
   push:
+    paths-ignore:
+      - 'docs'
     branches:
       - main
-    
 
 jobs:
   iOS:

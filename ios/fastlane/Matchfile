@@ -6,7 +6,6 @@ type('development')
 
 app_identifier([
   'tokyo.gajo.app.ios.nererun',
-  'xyz.tomokisun.nererun.staging',
 ])
 
 username('developertomokisun@gmail.com')

@@ -7,7 +7,6 @@ platform :ios do
     setup_ci(provider: 'travis')
 
     production_identifier = 'tokyo.gajo.app.ios.nererun'
-    staging_identifier = 'xyz.tomokisun.nererun.staging'
 
     username = 'tomokisun'
     personal_github_access_token = ENV['PERSONAL_ACCESS_TOKEN']
@@ -18,7 +17,7 @@ platform :ios do
       readonly: true,
       type: 'appstore',
       git_basic_authorization: basic_authorization_token,
-      app_identifier: [production_identifier, staging_identifier],
+      app_identifier: [production_identifier],
       git_url: 'https://github.com/tomokisun/certificates.git'
     )
   end

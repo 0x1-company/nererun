@@ -24,7 +24,7 @@ jobs:
         env:
           FILE_FIREBASE_IOS_DEVELOPMENT: ${{ secrets.FILE_FIREBASE_IOS_DEVELOPMENT }}
           FILE_FIREBASE_IOS_PRODUCTION: ${{ secrets.FILE_FIREBASE_IOS_PRODUCTION }}
-      - run: ./.github/workflows/scripts/install-flutter.sh 3.3.8
+      - run: ./.github/workflows/scripts/install-flutter.sh 3.16.4
       - run: ./.github/workflows/scripts/install-tools.sh
       - run: flutter pub get
       - uses: actions/cache@v4

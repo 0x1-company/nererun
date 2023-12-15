@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'product_state.dart';
 
@@ -31,7 +31,8 @@ mixin _$ProductState {
 abstract class $ProductStateCopyWith<$Res> {
   factory $ProductStateCopyWith(
           ProductState value, $Res Function(ProductState) then) =
-      _$ProductStateCopyWithImpl<$Res>;
+      _$ProductStateCopyWithImpl<$Res, ProductState>;
+  @useResult
   $Res call(
       {Duration? duration,
       Duration currentPosition,
@@ -41,53 +42,57 @@ abstract class $ProductStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ProductStateCopyWithImpl<$Res> implements $ProductStateCopyWith<$Res> {
+class _$ProductStateCopyWithImpl<$Res, $Val extends ProductState>
+    implements $ProductStateCopyWith<$Res> {
   _$ProductStateCopyWithImpl(this._value, this._then);
 
-  final ProductState _value;
   // ignore: unused_field
-  final $Res Function(ProductState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? duration = freezed,
-    Object? currentPosition = freezed,
-    Object? offTimerType = freezed,
-    Object? startDateTime = freezed,
+    Object? currentPosition = null,
+    Object? offTimerType = null,
+    Object? startDateTime = null,
     Object? offDateTime = freezed,
   }) {
     return _then(_value.copyWith(
-      duration: duration == freezed
+      duration: freezed == duration
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as Duration?,
-      currentPosition: currentPosition == freezed
+      currentPosition: null == currentPosition
           ? _value.currentPosition
           : currentPosition // ignore: cast_nullable_to_non_nullable
               as Duration,
-      offTimerType: offTimerType == freezed
+      offTimerType: null == offTimerType
           ? _value.offTimerType
           : offTimerType // ignore: cast_nullable_to_non_nullable
               as OffTimerType,
-      startDateTime: startDateTime == freezed
+      startDateTime: null == startDateTime
           ? _value.startDateTime
           : startDateTime // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      offDateTime: offDateTime == freezed
+      offDateTime: freezed == offDateTime
           ? _value.offDateTime
           : offDateTime // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_ProductStateCopyWith<$Res>
+abstract class _$$ProductStateImplCopyWith<$Res>
     implements $ProductStateCopyWith<$Res> {
-  factory _$$_ProductStateCopyWith(
-          _$_ProductState value, $Res Function(_$_ProductState) then) =
-      __$$_ProductStateCopyWithImpl<$Res>;
+  factory _$$ProductStateImplCopyWith(
+          _$ProductStateImpl value, $Res Function(_$ProductStateImpl) then) =
+      __$$ProductStateImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {Duration? duration,
       Duration currentPosition,
@@ -97,42 +102,40 @@ abstract class _$$_ProductStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ProductStateCopyWithImpl<$Res>
-    extends _$ProductStateCopyWithImpl<$Res>
-    implements _$$_ProductStateCopyWith<$Res> {
-  __$$_ProductStateCopyWithImpl(
-      _$_ProductState _value, $Res Function(_$_ProductState) _then)
-      : super(_value, (v) => _then(v as _$_ProductState));
+class __$$ProductStateImplCopyWithImpl<$Res>
+    extends _$ProductStateCopyWithImpl<$Res, _$ProductStateImpl>
+    implements _$$ProductStateImplCopyWith<$Res> {
+  __$$ProductStateImplCopyWithImpl(
+      _$ProductStateImpl _value, $Res Function(_$ProductStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_ProductState get _value => super._value as _$_ProductState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? duration = freezed,
-    Object? currentPosition = freezed,
-    Object? offTimerType = freezed,
-    Object? startDateTime = freezed,
+    Object? currentPosition = null,
+    Object? offTimerType = null,
+    Object? startDateTime = null,
     Object? offDateTime = freezed,
   }) {
-    return _then(_$_ProductState(
-      duration: duration == freezed
+    return _then(_$ProductStateImpl(
+      duration: freezed == duration
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as Duration?,
-      currentPosition: currentPosition == freezed
+      currentPosition: null == currentPosition
           ? _value.currentPosition
           : currentPosition // ignore: cast_nullable_to_non_nullable
               as Duration,
-      offTimerType: offTimerType == freezed
+      offTimerType: null == offTimerType
           ? _value.offTimerType
           : offTimerType // ignore: cast_nullable_to_non_nullable
               as OffTimerType,
-      startDateTime: startDateTime == freezed
+      startDateTime: null == startDateTime
           ? _value.startDateTime
           : startDateTime // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      offDateTime: offDateTime == freezed
+      offDateTime: freezed == offDateTime
           ? _value.offDateTime
           : offDateTime // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -142,8 +145,8 @@ class __$$_ProductStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ProductState extends _ProductState {
-  _$_ProductState(
+class _$ProductStateImpl extends _ProductState {
+  _$ProductStateImpl(
       {this.duration,
       this.currentPosition = Duration.zero,
       this.offTimerType = OffTimerType.off,
@@ -170,34 +173,31 @@ class _$_ProductState extends _ProductState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ProductState &&
-            const DeepCollectionEquality().equals(other.duration, duration) &&
-            const DeepCollectionEquality()
-                .equals(other.currentPosition, currentPosition) &&
-            const DeepCollectionEquality()
-                .equals(other.offTimerType, offTimerType) &&
-            const DeepCollectionEquality()
-                .equals(other.startDateTime, startDateTime) &&
-            const DeepCollectionEquality()
-                .equals(other.offDateTime, offDateTime));
+            other is _$ProductStateImpl &&
+            (identical(other.duration, duration) ||
+                other.duration == duration) &&
+            (identical(other.currentPosition, currentPosition) ||
+                other.currentPosition == currentPosition) &&
+            (identical(other.offTimerType, offTimerType) ||
+                other.offTimerType == offTimerType) &&
+            (identical(other.startDateTime, startDateTime) ||
+                other.startDateTime == startDateTime) &&
+            (identical(other.offDateTime, offDateTime) ||
+                other.offDateTime == offDateTime));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(duration),
-      const DeepCollectionEquality().hash(currentPosition),
-      const DeepCollectionEquality().hash(offTimerType),
-      const DeepCollectionEquality().hash(startDateTime),
-      const DeepCollectionEquality().hash(offDateTime));
+  int get hashCode => Object.hash(runtimeType, duration, currentPosition,
+      offTimerType, startDateTime, offDateTime);
 
   @JsonKey(ignore: true)
   @override
-  _$$_ProductStateCopyWith<_$_ProductState> get copyWith =>
-      __$$_ProductStateCopyWithImpl<_$_ProductState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ProductStateImplCopyWith<_$ProductStateImpl> get copyWith =>
+      __$$ProductStateImplCopyWithImpl<_$ProductStateImpl>(this, _$identity);
 }
 
 abstract class _ProductState extends ProductState {
@@ -206,7 +206,7 @@ abstract class _ProductState extends ProductState {
       final Duration currentPosition,
       final OffTimerType offTimerType,
       required final DateTime startDateTime,
-      final DateTime? offDateTime}) = _$_ProductState;
+      final DateTime? offDateTime}) = _$ProductStateImpl;
   _ProductState._() : super._();
 
   @override
@@ -221,6 +221,6 @@ abstract class _ProductState extends ProductState {
   DateTime? get offDateTime;
   @override
   @JsonKey(ignore: true)
-  _$$_ProductStateCopyWith<_$_ProductState> get copyWith =>
+  _$$ProductStateImplCopyWith<_$ProductStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

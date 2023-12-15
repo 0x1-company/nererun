@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'package.dart';
 
@@ -33,87 +33,92 @@ mixin _$Package {
 /// @nodoc
 abstract class $PackageCopyWith<$Res> {
   factory $PackageCopyWith(Package value, $Res Function(Package) then) =
-      _$PackageCopyWithImpl<$Res>;
+      _$PackageCopyWithImpl<$Res, Package>;
+  @useResult
   $Res call(
       {String latestOS, String appName, String appVersion, String buildNumber});
 }
 
 /// @nodoc
-class _$PackageCopyWithImpl<$Res> implements $PackageCopyWith<$Res> {
+class _$PackageCopyWithImpl<$Res, $Val extends Package>
+    implements $PackageCopyWith<$Res> {
   _$PackageCopyWithImpl(this._value, this._then);
 
-  final Package _value;
   // ignore: unused_field
-  final $Res Function(Package) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? latestOS = freezed,
-    Object? appName = freezed,
-    Object? appVersion = freezed,
-    Object? buildNumber = freezed,
+    Object? latestOS = null,
+    Object? appName = null,
+    Object? appVersion = null,
+    Object? buildNumber = null,
   }) {
     return _then(_value.copyWith(
-      latestOS: latestOS == freezed
+      latestOS: null == latestOS
           ? _value.latestOS
           : latestOS // ignore: cast_nullable_to_non_nullable
               as String,
-      appName: appName == freezed
+      appName: null == appName
           ? _value.appName
           : appName // ignore: cast_nullable_to_non_nullable
               as String,
-      appVersion: appVersion == freezed
+      appVersion: null == appVersion
           ? _value.appVersion
           : appVersion // ignore: cast_nullable_to_non_nullable
               as String,
-      buildNumber: buildNumber == freezed
+      buildNumber: null == buildNumber
           ? _value.buildNumber
           : buildNumber // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_PackageCopyWith<$Res> implements $PackageCopyWith<$Res> {
-  factory _$$_PackageCopyWith(
-          _$_Package value, $Res Function(_$_Package) then) =
-      __$$_PackageCopyWithImpl<$Res>;
+abstract class _$$PackageImplCopyWith<$Res> implements $PackageCopyWith<$Res> {
+  factory _$$PackageImplCopyWith(
+          _$PackageImpl value, $Res Function(_$PackageImpl) then) =
+      __$$PackageImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String latestOS, String appName, String appVersion, String buildNumber});
 }
 
 /// @nodoc
-class __$$_PackageCopyWithImpl<$Res> extends _$PackageCopyWithImpl<$Res>
-    implements _$$_PackageCopyWith<$Res> {
-  __$$_PackageCopyWithImpl(_$_Package _value, $Res Function(_$_Package) _then)
-      : super(_value, (v) => _then(v as _$_Package));
+class __$$PackageImplCopyWithImpl<$Res>
+    extends _$PackageCopyWithImpl<$Res, _$PackageImpl>
+    implements _$$PackageImplCopyWith<$Res> {
+  __$$PackageImplCopyWithImpl(
+      _$PackageImpl _value, $Res Function(_$PackageImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_Package get _value => super._value as _$_Package;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? latestOS = freezed,
-    Object? appName = freezed,
-    Object? appVersion = freezed,
-    Object? buildNumber = freezed,
+    Object? latestOS = null,
+    Object? appName = null,
+    Object? appVersion = null,
+    Object? buildNumber = null,
   }) {
-    return _then(_$_Package(
-      latestOS: latestOS == freezed
+    return _then(_$PackageImpl(
+      latestOS: null == latestOS
           ? _value.latestOS
           : latestOS // ignore: cast_nullable_to_non_nullable
               as String,
-      appName: appName == freezed
+      appName: null == appName
           ? _value.appName
           : appName // ignore: cast_nullable_to_non_nullable
               as String,
-      appVersion: appVersion == freezed
+      appVersion: null == appVersion
           ? _value.appVersion
           : appVersion // ignore: cast_nullable_to_non_nullable
               as String,
-      buildNumber: buildNumber == freezed
+      buildNumber: null == buildNumber
           ? _value.buildNumber
           : buildNumber // ignore: cast_nullable_to_non_nullable
               as String,
@@ -123,15 +128,15 @@ class __$$_PackageCopyWithImpl<$Res> extends _$PackageCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Package with DiagnosticableTreeMixin implements _Package {
-  const _$_Package(
+class _$PackageImpl with DiagnosticableTreeMixin implements _Package {
+  const _$PackageImpl(
       {required this.latestOS,
       required this.appName,
       required this.appVersion,
       required this.buildNumber});
 
-  factory _$_Package.fromJson(Map<String, dynamic> json) =>
-      _$$_PackageFromJson(json);
+  factory _$PackageImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PackageImplFromJson(json);
 
   @override
   final String latestOS;
@@ -159,35 +164,33 @@ class _$_Package with DiagnosticableTreeMixin implements _Package {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Package &&
-            const DeepCollectionEquality().equals(other.latestOS, latestOS) &&
-            const DeepCollectionEquality().equals(other.appName, appName) &&
-            const DeepCollectionEquality()
-                .equals(other.appVersion, appVersion) &&
-            const DeepCollectionEquality()
-                .equals(other.buildNumber, buildNumber));
+            other is _$PackageImpl &&
+            (identical(other.latestOS, latestOS) ||
+                other.latestOS == latestOS) &&
+            (identical(other.appName, appName) || other.appName == appName) &&
+            (identical(other.appVersion, appVersion) ||
+                other.appVersion == appVersion) &&
+            (identical(other.buildNumber, buildNumber) ||
+                other.buildNumber == buildNumber));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(latestOS),
-      const DeepCollectionEquality().hash(appName),
-      const DeepCollectionEquality().hash(appVersion),
-      const DeepCollectionEquality().hash(buildNumber));
+  int get hashCode =>
+      Object.hash(runtimeType, latestOS, appName, appVersion, buildNumber);
 
   @JsonKey(ignore: true)
   @override
-  _$$_PackageCopyWith<_$_Package> get copyWith =>
-      __$$_PackageCopyWithImpl<_$_Package>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PackageImplCopyWith<_$PackageImpl> get copyWith =>
+      __$$PackageImplCopyWithImpl<_$PackageImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PackageToJson(
+    return _$$PackageImplToJson(
       this,
     );
   }
@@ -198,9 +201,9 @@ abstract class _Package implements Package {
       {required final String latestOS,
       required final String appName,
       required final String appVersion,
-      required final String buildNumber}) = _$_Package;
+      required final String buildNumber}) = _$PackageImpl;
 
-  factory _Package.fromJson(Map<String, dynamic> json) = _$_Package.fromJson;
+  factory _Package.fromJson(Map<String, dynamic> json) = _$PackageImpl.fromJson;
 
   @override
   String get latestOS;
@@ -212,6 +215,6 @@ abstract class _Package implements Package {
   String get buildNumber;
   @override
   @JsonKey(ignore: true)
-  _$$_PackageCopyWith<_$_Package> get copyWith =>
+  _$$PackageImplCopyWith<_$PackageImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

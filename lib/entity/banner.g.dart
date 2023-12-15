@@ -6,14 +6,15 @@ part of 'banner.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_Banner _$$_BannerFromJson(Map<String, dynamic> json) => _$_Banner(
+_$BannerImpl _$$BannerImplFromJson(Map<String, dynamic> json) => _$BannerImpl(
       title: json['title'] as String,
       titleColor: json['titleColor'] as int,
       body: json['body'] as String,
       url: json['url'] as String,
     );
 
-Map<String, dynamic> _$$_BannerToJson(_$_Banner instance) => <String, dynamic>{
+Map<String, dynamic> _$$BannerImplToJson(_$BannerImpl instance) =>
+    <String, dynamic>{
       'title': instance.title,
       'titleColor': instance.titleColor,
       'body': instance.body,

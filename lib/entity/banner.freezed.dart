@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'banner.dart';
 
@@ -33,84 +33,90 @@ mixin _$Banner {
 /// @nodoc
 abstract class $BannerCopyWith<$Res> {
   factory $BannerCopyWith(Banner value, $Res Function(Banner) then) =
-      _$BannerCopyWithImpl<$Res>;
+      _$BannerCopyWithImpl<$Res, Banner>;
+  @useResult
   $Res call({String title, int titleColor, String body, String url});
 }
 
 /// @nodoc
-class _$BannerCopyWithImpl<$Res> implements $BannerCopyWith<$Res> {
+class _$BannerCopyWithImpl<$Res, $Val extends Banner>
+    implements $BannerCopyWith<$Res> {
   _$BannerCopyWithImpl(this._value, this._then);
 
-  final Banner _value;
   // ignore: unused_field
-  final $Res Function(Banner) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? title = freezed,
-    Object? titleColor = freezed,
-    Object? body = freezed,
-    Object? url = freezed,
+    Object? title = null,
+    Object? titleColor = null,
+    Object? body = null,
+    Object? url = null,
   }) {
     return _then(_value.copyWith(
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      titleColor: titleColor == freezed
+      titleColor: null == titleColor
           ? _value.titleColor
           : titleColor // ignore: cast_nullable_to_non_nullable
               as int,
-      body: body == freezed
+      body: null == body
           ? _value.body
           : body // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_BannerCopyWith<$Res> implements $BannerCopyWith<$Res> {
-  factory _$$_BannerCopyWith(_$_Banner value, $Res Function(_$_Banner) then) =
-      __$$_BannerCopyWithImpl<$Res>;
+abstract class _$$BannerImplCopyWith<$Res> implements $BannerCopyWith<$Res> {
+  factory _$$BannerImplCopyWith(
+          _$BannerImpl value, $Res Function(_$BannerImpl) then) =
+      __$$BannerImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String title, int titleColor, String body, String url});
 }
 
 /// @nodoc
-class __$$_BannerCopyWithImpl<$Res> extends _$BannerCopyWithImpl<$Res>
-    implements _$$_BannerCopyWith<$Res> {
-  __$$_BannerCopyWithImpl(_$_Banner _value, $Res Function(_$_Banner) _then)
-      : super(_value, (v) => _then(v as _$_Banner));
+class __$$BannerImplCopyWithImpl<$Res>
+    extends _$BannerCopyWithImpl<$Res, _$BannerImpl>
+    implements _$$BannerImplCopyWith<$Res> {
+  __$$BannerImplCopyWithImpl(
+      _$BannerImpl _value, $Res Function(_$BannerImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_Banner get _value => super._value as _$_Banner;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? title = freezed,
-    Object? titleColor = freezed,
-    Object? body = freezed,
-    Object? url = freezed,
+    Object? title = null,
+    Object? titleColor = null,
+    Object? body = null,
+    Object? url = null,
   }) {
-    return _then(_$_Banner(
-      title: title == freezed
+    return _then(_$BannerImpl(
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      titleColor: titleColor == freezed
+      titleColor: null == titleColor
           ? _value.titleColor
           : titleColor // ignore: cast_nullable_to_non_nullable
               as int,
-      body: body == freezed
+      body: null == body
           ? _value.body
           : body // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
@@ -120,15 +126,15 @@ class __$$_BannerCopyWithImpl<$Res> extends _$BannerCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Banner with DiagnosticableTreeMixin implements _Banner {
-  const _$_Banner(
+class _$BannerImpl with DiagnosticableTreeMixin implements _Banner {
+  const _$BannerImpl(
       {required this.title,
       required this.titleColor,
       required this.body,
       required this.url});
 
-  factory _$_Banner.fromJson(Map<String, dynamic> json) =>
-      _$$_BannerFromJson(json);
+  factory _$BannerImpl.fromJson(Map<String, dynamic> json) =>
+      _$$BannerImplFromJson(json);
 
   @override
   final String title;
@@ -156,34 +162,30 @@ class _$_Banner with DiagnosticableTreeMixin implements _Banner {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Banner &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality()
-                .equals(other.titleColor, titleColor) &&
-            const DeepCollectionEquality().equals(other.body, body) &&
-            const DeepCollectionEquality().equals(other.url, url));
+            other is _$BannerImpl &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.titleColor, titleColor) ||
+                other.titleColor == titleColor) &&
+            (identical(other.body, body) || other.body == body) &&
+            (identical(other.url, url) || other.url == url));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(titleColor),
-      const DeepCollectionEquality().hash(body),
-      const DeepCollectionEquality().hash(url));
+  int get hashCode => Object.hash(runtimeType, title, titleColor, body, url);
 
   @JsonKey(ignore: true)
   @override
-  _$$_BannerCopyWith<_$_Banner> get copyWith =>
-      __$$_BannerCopyWithImpl<_$_Banner>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$BannerImplCopyWith<_$BannerImpl> get copyWith =>
+      __$$BannerImplCopyWithImpl<_$BannerImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BannerToJson(
+    return _$$BannerImplToJson(
       this,
     );
   }
@@ -194,9 +196,9 @@ abstract class _Banner implements Banner {
       {required final String title,
       required final int titleColor,
       required final String body,
-      required final String url}) = _$_Banner;
+      required final String url}) = _$BannerImpl;
 
-  factory _Banner.fromJson(Map<String, dynamic> json) = _$_Banner.fromJson;
+  factory _Banner.fromJson(Map<String, dynamic> json) = _$BannerImpl.fromJson;
 
   @override
   String get title;
@@ -208,6 +210,6 @@ abstract class _Banner implements Banner {
   String get url;
   @override
   @JsonKey(ignore: true)
-  _$$_BannerCopyWith<_$_Banner> get copyWith =>
+  _$$BannerImplCopyWith<_$BannerImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

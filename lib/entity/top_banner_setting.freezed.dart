@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'top_banner_setting.dart';
 
@@ -38,7 +38,8 @@ mixin _$TopBannerSetting {
 abstract class $TopBannerSettingCopyWith<$Res> {
   factory $TopBannerSettingCopyWith(
           TopBannerSetting value, $Res Function(TopBannerSetting) then) =
-      _$TopBannerSettingCopyWithImpl<$Res>;
+      _$TopBannerSettingCopyWithImpl<$Res, TopBannerSetting>;
+  @useResult
   $Res call(
       {String title,
       int titleColor,
@@ -50,64 +51,67 @@ abstract class $TopBannerSettingCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$TopBannerSettingCopyWithImpl<$Res>
+class _$TopBannerSettingCopyWithImpl<$Res, $Val extends TopBannerSetting>
     implements $TopBannerSettingCopyWith<$Res> {
   _$TopBannerSettingCopyWithImpl(this._value, this._then);
 
-  final TopBannerSetting _value;
   // ignore: unused_field
-  final $Res Function(TopBannerSetting) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? title = freezed,
-    Object? titleColor = freezed,
-    Object? body = freezed,
-    Object? bodyColor = freezed,
-    Object? url = freezed,
-    Object? position = freezed,
-    Object? isVisible = freezed,
+    Object? title = null,
+    Object? titleColor = null,
+    Object? body = null,
+    Object? bodyColor = null,
+    Object? url = null,
+    Object? position = null,
+    Object? isVisible = null,
   }) {
     return _then(_value.copyWith(
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      titleColor: titleColor == freezed
+      titleColor: null == titleColor
           ? _value.titleColor
           : titleColor // ignore: cast_nullable_to_non_nullable
               as int,
-      body: body == freezed
+      body: null == body
           ? _value.body
           : body // ignore: cast_nullable_to_non_nullable
               as String,
-      bodyColor: bodyColor == freezed
+      bodyColor: null == bodyColor
           ? _value.bodyColor
           : bodyColor // ignore: cast_nullable_to_non_nullable
               as int,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      position: position == freezed
+      position: null == position
           ? _value.position
           : position // ignore: cast_nullable_to_non_nullable
               as int,
-      isVisible: isVisible == freezed
+      isVisible: null == isVisible
           ? _value.isVisible
           : isVisible // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_TopBannerSettingCopyWith<$Res>
+abstract class _$$TopBannerSettingImplCopyWith<$Res>
     implements $TopBannerSettingCopyWith<$Res> {
-  factory _$$_TopBannerSettingCopyWith(
-          _$_TopBannerSetting value, $Res Function(_$_TopBannerSetting) then) =
-      __$$_TopBannerSettingCopyWithImpl<$Res>;
+  factory _$$TopBannerSettingImplCopyWith(_$TopBannerSettingImpl value,
+          $Res Function(_$TopBannerSettingImpl) then) =
+      __$$TopBannerSettingImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String title,
       int titleColor,
@@ -119,52 +123,50 @@ abstract class _$$_TopBannerSettingCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_TopBannerSettingCopyWithImpl<$Res>
-    extends _$TopBannerSettingCopyWithImpl<$Res>
-    implements _$$_TopBannerSettingCopyWith<$Res> {
-  __$$_TopBannerSettingCopyWithImpl(
-      _$_TopBannerSetting _value, $Res Function(_$_TopBannerSetting) _then)
-      : super(_value, (v) => _then(v as _$_TopBannerSetting));
+class __$$TopBannerSettingImplCopyWithImpl<$Res>
+    extends _$TopBannerSettingCopyWithImpl<$Res, _$TopBannerSettingImpl>
+    implements _$$TopBannerSettingImplCopyWith<$Res> {
+  __$$TopBannerSettingImplCopyWithImpl(_$TopBannerSettingImpl _value,
+      $Res Function(_$TopBannerSettingImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_TopBannerSetting get _value => super._value as _$_TopBannerSetting;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? title = freezed,
-    Object? titleColor = freezed,
-    Object? body = freezed,
-    Object? bodyColor = freezed,
-    Object? url = freezed,
-    Object? position = freezed,
-    Object? isVisible = freezed,
+    Object? title = null,
+    Object? titleColor = null,
+    Object? body = null,
+    Object? bodyColor = null,
+    Object? url = null,
+    Object? position = null,
+    Object? isVisible = null,
   }) {
-    return _then(_$_TopBannerSetting(
-      title: title == freezed
+    return _then(_$TopBannerSettingImpl(
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      titleColor: titleColor == freezed
+      titleColor: null == titleColor
           ? _value.titleColor
           : titleColor // ignore: cast_nullable_to_non_nullable
               as int,
-      body: body == freezed
+      body: null == body
           ? _value.body
           : body // ignore: cast_nullable_to_non_nullable
               as String,
-      bodyColor: bodyColor == freezed
+      bodyColor: null == bodyColor
           ? _value.bodyColor
           : bodyColor // ignore: cast_nullable_to_non_nullable
               as int,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      position: position == freezed
+      position: null == position
           ? _value.position
           : position // ignore: cast_nullable_to_non_nullable
               as int,
-      isVisible: isVisible == freezed
+      isVisible: null == isVisible
           ? _value.isVisible
           : isVisible // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -174,8 +176,8 @@ class __$$_TopBannerSettingCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_TopBannerSetting implements _TopBannerSetting {
-  _$_TopBannerSetting(
+class _$TopBannerSettingImpl implements _TopBannerSetting {
+  _$TopBannerSettingImpl(
       {required this.title,
       this.titleColor = 0xFFEDC845,
       required this.body,
@@ -184,8 +186,8 @@ class _$_TopBannerSetting implements _TopBannerSetting {
       this.position = 99,
       this.isVisible = false});
 
-  factory _$_TopBannerSetting.fromJson(Map<String, dynamic> json) =>
-      _$$_TopBannerSettingFromJson(json);
+  factory _$TopBannerSettingImpl.fromJson(Map<String, dynamic> json) =>
+      _$$TopBannerSettingImplFromJson(json);
 
   @override
   final String title;
@@ -212,40 +214,38 @@ class _$_TopBannerSetting implements _TopBannerSetting {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_TopBannerSetting &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality()
-                .equals(other.titleColor, titleColor) &&
-            const DeepCollectionEquality().equals(other.body, body) &&
-            const DeepCollectionEquality().equals(other.bodyColor, bodyColor) &&
-            const DeepCollectionEquality().equals(other.url, url) &&
-            const DeepCollectionEquality().equals(other.position, position) &&
-            const DeepCollectionEquality().equals(other.isVisible, isVisible));
+            other is _$TopBannerSettingImpl &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.titleColor, titleColor) ||
+                other.titleColor == titleColor) &&
+            (identical(other.body, body) || other.body == body) &&
+            (identical(other.bodyColor, bodyColor) ||
+                other.bodyColor == bodyColor) &&
+            (identical(other.url, url) || other.url == url) &&
+            (identical(other.position, position) ||
+                other.position == position) &&
+            (identical(other.isVisible, isVisible) ||
+                other.isVisible == isVisible));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(titleColor),
-      const DeepCollectionEquality().hash(body),
-      const DeepCollectionEquality().hash(bodyColor),
-      const DeepCollectionEquality().hash(url),
-      const DeepCollectionEquality().hash(position),
-      const DeepCollectionEquality().hash(isVisible));
+  int get hashCode => Object.hash(runtimeType, title, titleColor, body,
+      bodyColor, url, position, isVisible);
 
   @JsonKey(ignore: true)
   @override
-  _$$_TopBannerSettingCopyWith<_$_TopBannerSetting> get copyWith =>
-      __$$_TopBannerSettingCopyWithImpl<_$_TopBannerSetting>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$TopBannerSettingImplCopyWith<_$TopBannerSettingImpl> get copyWith =>
+      __$$TopBannerSettingImplCopyWithImpl<_$TopBannerSettingImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_TopBannerSettingToJson(
+    return _$$TopBannerSettingImplToJson(
       this,
     );
   }
@@ -259,10 +259,10 @@ abstract class _TopBannerSetting implements TopBannerSetting {
       final int bodyColor,
       required final String url,
       final int position,
-      final bool isVisible}) = _$_TopBannerSetting;
+      final bool isVisible}) = _$TopBannerSettingImpl;
 
   factory _TopBannerSetting.fromJson(Map<String, dynamic> json) =
-      _$_TopBannerSetting.fromJson;
+      _$TopBannerSettingImpl.fromJson;
 
   @override
   String get title;
@@ -280,6 +280,6 @@ abstract class _TopBannerSetting implements TopBannerSetting {
   bool get isVisible;
   @override
   @JsonKey(ignore: true)
-  _$$_TopBannerSettingCopyWith<_$_TopBannerSetting> get copyWith =>
+  _$$TopBannerSettingImplCopyWith<_$TopBannerSettingImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

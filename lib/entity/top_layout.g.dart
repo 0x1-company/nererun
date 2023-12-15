@@ -6,7 +6,8 @@ part of 'top_layout.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_TopLayout _$$_TopLayoutFromJson(Map<String, dynamic> json) => _$_TopLayout(
+_$TopLayoutImpl _$$TopLayoutImplFromJson(Map<String, dynamic> json) =>
+    _$TopLayoutImpl(
       type: $enumDecodeNullable(_$TopLayoutTypeEnumMap, json['type']),
       productIDs: (json['productIDs'] as List<dynamic>?)
               ?.map((e) => e as String)
@@ -14,7 +15,7 @@ _$_TopLayout _$$_TopLayoutFromJson(Map<String, dynamic> json) => _$_TopLayout(
           const [],
     );
 
-Map<String, dynamic> _$$_TopLayoutToJson(_$_TopLayout instance) =>
+Map<String, dynamic> _$$TopLayoutImplToJson(_$TopLayoutImpl instance) =>
     <String, dynamic>{
       'type': _$TopLayoutTypeEnumMap[instance.type],
       'productIDs': instance.productIDs,

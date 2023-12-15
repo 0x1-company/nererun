@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'state.codegen.dart';
 
@@ -32,7 +32,8 @@ mixin _$HomeState {
 /// @nodoc
 abstract class $HomeStateCopyWith<$Res> {
   factory $HomeStateCopyWith(HomeState value, $Res Function(HomeState) then) =
-      _$HomeStateCopyWithImpl<$Res>;
+      _$HomeStateCopyWithImpl<$Res, HomeState>;
+  @useResult
   $Res call(
       {List<TopBannerSetting> topBannerSettings,
       List<Product> recommendations,
@@ -43,57 +44,62 @@ abstract class $HomeStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$HomeStateCopyWithImpl<$Res> implements $HomeStateCopyWith<$Res> {
+class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
+    implements $HomeStateCopyWith<$Res> {
   _$HomeStateCopyWithImpl(this._value, this._then);
 
-  final HomeState _value;
   // ignore: unused_field
-  final $Res Function(HomeState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? topBannerSettings = freezed,
-    Object? recommendations = freezed,
-    Object? stories = freezed,
-    Object? sounds = freezed,
-    Object? musicBoxes = freezed,
-    Object? musics = freezed,
+    Object? topBannerSettings = null,
+    Object? recommendations = null,
+    Object? stories = null,
+    Object? sounds = null,
+    Object? musicBoxes = null,
+    Object? musics = null,
   }) {
     return _then(_value.copyWith(
-      topBannerSettings: topBannerSettings == freezed
+      topBannerSettings: null == topBannerSettings
           ? _value.topBannerSettings
           : topBannerSettings // ignore: cast_nullable_to_non_nullable
               as List<TopBannerSetting>,
-      recommendations: recommendations == freezed
+      recommendations: null == recommendations
           ? _value.recommendations
           : recommendations // ignore: cast_nullable_to_non_nullable
               as List<Product>,
-      stories: stories == freezed
+      stories: null == stories
           ? _value.stories
           : stories // ignore: cast_nullable_to_non_nullable
               as List<Product>,
-      sounds: sounds == freezed
+      sounds: null == sounds
           ? _value.sounds
           : sounds // ignore: cast_nullable_to_non_nullable
               as List<Product>,
-      musicBoxes: musicBoxes == freezed
+      musicBoxes: null == musicBoxes
           ? _value.musicBoxes
           : musicBoxes // ignore: cast_nullable_to_non_nullable
               as List<Product>,
-      musics: musics == freezed
+      musics: null == musics
           ? _value.musics
           : musics // ignore: cast_nullable_to_non_nullable
               as List<Product>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_HomeStateCopyWith<$Res> implements $HomeStateCopyWith<$Res> {
-  factory _$$_HomeStateCopyWith(
-          _$_HomeState value, $Res Function(_$_HomeState) then) =
-      __$$_HomeStateCopyWithImpl<$Res>;
+abstract class _$$HomeStateImplCopyWith<$Res>
+    implements $HomeStateCopyWith<$Res> {
+  factory _$$HomeStateImplCopyWith(
+          _$HomeStateImpl value, $Res Function(_$HomeStateImpl) then) =
+      __$$HomeStateImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {List<TopBannerSetting> topBannerSettings,
       List<Product> recommendations,
@@ -104,46 +110,45 @@ abstract class _$$_HomeStateCopyWith<$Res> implements $HomeStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_HomeStateCopyWithImpl<$Res> extends _$HomeStateCopyWithImpl<$Res>
-    implements _$$_HomeStateCopyWith<$Res> {
-  __$$_HomeStateCopyWithImpl(
-      _$_HomeState _value, $Res Function(_$_HomeState) _then)
-      : super(_value, (v) => _then(v as _$_HomeState));
+class __$$HomeStateImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$HomeStateImpl>
+    implements _$$HomeStateImplCopyWith<$Res> {
+  __$$HomeStateImplCopyWithImpl(
+      _$HomeStateImpl _value, $Res Function(_$HomeStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_HomeState get _value => super._value as _$_HomeState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? topBannerSettings = freezed,
-    Object? recommendations = freezed,
-    Object? stories = freezed,
-    Object? sounds = freezed,
-    Object? musicBoxes = freezed,
-    Object? musics = freezed,
+    Object? topBannerSettings = null,
+    Object? recommendations = null,
+    Object? stories = null,
+    Object? sounds = null,
+    Object? musicBoxes = null,
+    Object? musics = null,
   }) {
-    return _then(_$_HomeState(
-      topBannerSettings: topBannerSettings == freezed
+    return _then(_$HomeStateImpl(
+      topBannerSettings: null == topBannerSettings
           ? _value._topBannerSettings
           : topBannerSettings // ignore: cast_nullable_to_non_nullable
               as List<TopBannerSetting>,
-      recommendations: recommendations == freezed
+      recommendations: null == recommendations
           ? _value._recommendations
           : recommendations // ignore: cast_nullable_to_non_nullable
               as List<Product>,
-      stories: stories == freezed
+      stories: null == stories
           ? _value._stories
           : stories // ignore: cast_nullable_to_non_nullable
               as List<Product>,
-      sounds: sounds == freezed
+      sounds: null == sounds
           ? _value._sounds
           : sounds // ignore: cast_nullable_to_non_nullable
               as List<Product>,
-      musicBoxes: musicBoxes == freezed
+      musicBoxes: null == musicBoxes
           ? _value._musicBoxes
           : musicBoxes // ignore: cast_nullable_to_non_nullable
               as List<Product>,
-      musics: musics == freezed
+      musics: null == musics
           ? _value._musics
           : musics // ignore: cast_nullable_to_non_nullable
               as List<Product>,
@@ -153,8 +158,8 @@ class __$$_HomeStateCopyWithImpl<$Res> extends _$HomeStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_HomeState extends _HomeState {
-  _$_HomeState(
+class _$HomeStateImpl extends _HomeState {
+  _$HomeStateImpl(
       {required final List<TopBannerSetting> topBannerSettings,
       required final List<Product> recommendations,
       required final List<Product> stories,
@@ -172,6 +177,8 @@ class _$_HomeState extends _HomeState {
   final List<TopBannerSetting> _topBannerSettings;
   @override
   List<TopBannerSetting> get topBannerSettings {
+    if (_topBannerSettings is EqualUnmodifiableListView)
+      return _topBannerSettings;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_topBannerSettings);
   }
@@ -179,6 +186,7 @@ class _$_HomeState extends _HomeState {
   final List<Product> _recommendations;
   @override
   List<Product> get recommendations {
+    if (_recommendations is EqualUnmodifiableListView) return _recommendations;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_recommendations);
   }
@@ -186,6 +194,7 @@ class _$_HomeState extends _HomeState {
   final List<Product> _stories;
   @override
   List<Product> get stories {
+    if (_stories is EqualUnmodifiableListView) return _stories;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_stories);
   }
@@ -193,6 +202,7 @@ class _$_HomeState extends _HomeState {
   final List<Product> _sounds;
   @override
   List<Product> get sounds {
+    if (_sounds is EqualUnmodifiableListView) return _sounds;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_sounds);
   }
@@ -200,6 +210,7 @@ class _$_HomeState extends _HomeState {
   final List<Product> _musicBoxes;
   @override
   List<Product> get musicBoxes {
+    if (_musicBoxes is EqualUnmodifiableListView) return _musicBoxes;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_musicBoxes);
   }
@@ -207,6 +218,7 @@ class _$_HomeState extends _HomeState {
   final List<Product> _musics;
   @override
   List<Product> get musics {
+    if (_musics is EqualUnmodifiableListView) return _musics;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_musics);
   }
@@ -217,10 +229,10 @@ class _$_HomeState extends _HomeState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_HomeState &&
+            other is _$HomeStateImpl &&
             const DeepCollectionEquality()
                 .equals(other._topBannerSettings, _topBannerSettings) &&
             const DeepCollectionEquality()
@@ -244,8 +256,9 @@ class _$_HomeState extends _HomeState {
 
   @JsonKey(ignore: true)
   @override
-  _$$_HomeStateCopyWith<_$_HomeState> get copyWith =>
-      __$$_HomeStateCopyWithImpl<_$_HomeState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$HomeStateImplCopyWith<_$HomeStateImpl> get copyWith =>
+      __$$HomeStateImplCopyWithImpl<_$HomeStateImpl>(this, _$identity);
 }
 
 abstract class _HomeState extends HomeState {
@@ -255,7 +268,7 @@ abstract class _HomeState extends HomeState {
       required final List<Product> stories,
       required final List<Product> sounds,
       required final List<Product> musicBoxes,
-      required final List<Product> musics}) = _$_HomeState;
+      required final List<Product> musics}) = _$HomeStateImpl;
   _HomeState._() : super._();
 
   @override
@@ -272,6 +285,6 @@ abstract class _HomeState extends HomeState {
   List<Product> get musics;
   @override
   @JsonKey(ignore: true)
-  _$$_HomeStateCopyWith<_$_HomeState> get copyWith =>
+  _$$HomeStateImplCopyWith<_$HomeStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

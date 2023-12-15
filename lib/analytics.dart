@@ -5,7 +5,7 @@ import 'package:nererun/entity/off_timer_type.dart';
 import 'package:nererun/entity/product.dart';
 import 'package:nererun/entity/top_banner_setting.dart';
 
-final firebaseAnalytics = FirebaseAnalytics();
+final firebaseAnalytics = FirebaseAnalytics.instance;
 
 class Analytics {
   String screenName = '';

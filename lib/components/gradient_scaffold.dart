@@ -12,12 +12,12 @@ class GradientScaffold extends Scaffold {
           appBar: appBar,
           bottomNavigationBar: bottomNavigationBar,
           body: Container(
-            child: body,
             width: double.infinity,
             height: double.infinity,
             decoration: const BoxDecoration(
               gradient: AppGradient.primary,
             ),
+            child: body,
           ),
         );
 }

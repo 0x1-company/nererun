@@ -4,17 +4,13 @@ class DateTimeFormatter {
   static String hourAndMinute(DateTime? dateTime) {
     if (dateTime == null) return '';
     final format = NumberFormat('00');
-    return format.format(dateTime.hour) + ':' + format.format(dateTime.minute);
+    return '${format.format(dateTime.hour)}:${format.format(dateTime.minute)}';
   }
 
   static String monthMinute(DateTime? dateTime) {
     if (dateTime == null) return '';
     final format = NumberFormat('00');
-    return format.format(dateTime.month) +
-        '/' +
-        format.format(dateTime.day) +
-        ' ' +
-        hourAndMinute(dateTime);
+    return '${format.format(dateTime.month)}/${format.format(dateTime.day)} ${hourAndMinute(dateTime)}';
   }
 
   static String monthAndDay(DateTime? dateTime) {

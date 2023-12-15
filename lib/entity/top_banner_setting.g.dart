@@ -6,8 +6,9 @@ part of 'top_banner_setting.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_TopBannerSetting _$$_TopBannerSettingFromJson(Map<String, dynamic> json) =>
-    _$_TopBannerSetting(
+_$TopBannerSettingImpl _$$TopBannerSettingImplFromJson(
+        Map<String, dynamic> json) =>
+    _$TopBannerSettingImpl(
       title: json['title'] as String,
       titleColor: json['titleColor'] as int? ?? 0xFFEDC845,
       body: json['body'] as String,
@@ -17,7 +18,8 @@ _$_TopBannerSetting _$$_TopBannerSettingFromJson(Map<String, dynamic> json) =>
       isVisible: json['isVisible'] as bool? ?? false,
     );
 
-Map<String, dynamic> _$$_TopBannerSettingToJson(_$_TopBannerSetting instance) =>
+Map<String, dynamic> _$$TopBannerSettingImplToJson(
+        _$TopBannerSettingImpl instance) =>
     <String, dynamic>{
       'title': instance.title,
       'titleColor': instance.titleColor,

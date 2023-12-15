@@ -7,7 +7,6 @@ import 'package:nererun/components/scaffold_indicator.dart';
 import 'package:nererun/entity/off_timer_type.dart';
 import 'package:nererun/feature/off_timer/components/off_timer_button.dart';
 import 'package:nererun/feature/off_timer/off_timer_page_current_type_state.dart';
-import 'package:nererun/feature/off_timer/off_timer_page_state.codegen.dart';
 import 'package:nererun/feature/off_timer/off_timer_page_state_notifier.dart';
 import 'package:nererun/resource/color.dart';
 import 'package:nererun/resource/text_style.dart';
@@ -76,7 +75,6 @@ class OffTimerScreen extends HookConsumerWidget {
         );
       },
       error: (error, stackTrace) {
-        ref.refresh(offTimerStateProvider);
         return Container();
       },
       loading: () => const ScaffoldIndicator(),

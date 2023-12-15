@@ -31,7 +31,7 @@ class TopMusicBoxPane extends StatelessWidget {
             child: Row(
               children: [
                 const SizedBox(width: 8),
-                ...musicBoxes.map((d) => ProductCard(key, d)).toList(),
+                ...musicBoxes.map((d) => ProductCard(key, d)),
                 const SizedBox(width: 8),
               ],
             ),

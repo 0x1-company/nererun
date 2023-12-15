@@ -16,9 +16,11 @@ class App extends StatelessWidget {
       home: const Root(),
       theme: ThemeData(
         primaryColor: AppColor.black,
-        backgroundColor: AppColor.black,
         scaffoldBackgroundColor: AppColor.black,
         fontFamily: FontFamily.notoSansJpRegular,
+        colorScheme: const ColorScheme.dark(
+          background: AppColor.black,
+        ),
       ),
       navigatorObservers: [
         FirebaseAnalyticsObserver(analytics: firebaseAnalytics),

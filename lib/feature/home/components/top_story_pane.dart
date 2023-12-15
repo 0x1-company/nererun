@@ -31,7 +31,7 @@ class TopStoryPane extends StatelessWidget {
             child: Row(
               children: [
                 const SizedBox(width: 8),
-                ...stories.map((d) => ProductCard(key, d)).toList(),
+                ...stories.map((d) => ProductCard(key, d)),
                 const SizedBox(width: 8),
               ],
             ),

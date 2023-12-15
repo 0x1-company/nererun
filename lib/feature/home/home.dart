@@ -76,7 +76,6 @@ class HomeScreen extends HookConsumerWidget {
         );
       },
       error: (error, stackTrace) {
-        ref.refresh(homeAsyncStateProvider);
         return Container();
       },
       loading: () => const ScaffoldIndicator(),

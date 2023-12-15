@@ -6,13 +6,13 @@ part of 'reminder_time.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ReminderTime _$$_ReminderTimeFromJson(Map<String, dynamic> json) =>
-    _$_ReminderTime(
+_$ReminderTimeImpl _$$ReminderTimeImplFromJson(Map<String, dynamic> json) =>
+    _$ReminderTimeImpl(
       hour: json['hour'] as int,
       minute: json['minute'] as int,
     );
 
-Map<String, dynamic> _$$_ReminderTimeToJson(_$_ReminderTime instance) =>
+Map<String, dynamic> _$$ReminderTimeImplToJson(_$ReminderTimeImpl instance) =>
     <String, dynamic>{
       'hour': instance.hour,
       'minute': instance.minute,

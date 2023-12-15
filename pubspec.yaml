@@ -47,6 +47,8 @@ dev_dependencies:
 
 dependency_overrides:
   package_info_plus: any
+  wakelock_windows: any
+  win32: any
 
 flutter_icons:
   android: true 

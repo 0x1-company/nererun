@@ -1,4 +1,4 @@
-git_url('https://github.com/tomokisun/certificates.git')
+git_url('https://github.com/0x1-company/certificates.git')
 
 storage_mode('git')
 
@@ -8,4 +8,4 @@ app_identifier([
   'tokyo.gajo.app.ios.nererun',
 ])
 
-username('developertomokisun@gmail.com')
+username('apple-developer-admin@0x1.company')

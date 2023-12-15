@@ -6,19 +6,15 @@ platform :ios do
   lane :certificates do
     setup_ci(provider: 'travis')
 
-    production_identifier = 'tokyo.gajo.app.ios.nererun'
-
     username = 'tomokisun'
     personal_github_access_token = ENV['PERSONAL_ACCESS_TOKEN']
     authorization_token_str = "#{username}:#{personal_github_access_token}"
     basic_authorization_token = Base64.strict_encode64(authorization_token_str)
 
     match(
-      readonly: true,
       type: 'appstore',
       git_basic_authorization: basic_authorization_token,
-      app_identifier: [production_identifier],
-      git_url: 'https://github.com/0x1-company/certificates.git'
+      app_identifier: ['tokyo.gajo.app.ios.nererun'],
     )
   end
 end

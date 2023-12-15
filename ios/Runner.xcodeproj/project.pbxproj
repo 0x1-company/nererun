@@ -390,9 +390,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AV9FQ3YF56;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7NP395GC3;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Runner/Info-staging.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -400,9 +401,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.tomokisun.nererun.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = tokyo.gajo.app.ios.nererun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development xyz.tomokisun.nererun.staging";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development tokyo.gajo.app.ios.nererun";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -527,7 +528,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = T97YRW3726;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AV9FQ3YF56;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7NP395GC3;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Runner/Info-staging.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -535,10 +536,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.tomokisun.nererun.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = tokyo.gajo.app.ios.nererun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development xyz.tomokisun.nererun.staging";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development xyz.tomokisun.nererun.staging";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development tokyo.gajo.app.ios.nererun";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;

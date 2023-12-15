@@ -31,7 +31,7 @@ class TopRecommendedPane extends StatelessWidget {
             child: Row(
               children: [
                 const SizedBox(width: 8),
-                ...recommendations.map((d) => ProductCard(key, d)).toList(),
+                ...recommendations.map((d) => ProductCard(key, d)),
                 const SizedBox(width: 8),
               ],
             ),

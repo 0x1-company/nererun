@@ -31,7 +31,7 @@ class TopSoundPane extends StatelessWidget {
             child: Row(
               children: [
                 const SizedBox(width: 8),
-                ...sounds.map((d) => ProductCard(key, d)).toList(),
+                ...sounds.map((d) => ProductCard(key, d)),
                 const SizedBox(width: 8),
               ],
             ),

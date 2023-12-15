@@ -10,7 +10,7 @@ jobs:
   analyze:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - run: ./.github/workflows/scripts/install-flutter.sh 3.3.8
       - run: ./.github/workflows/scripts/install-tools.sh
       - run: flutter pub get
@@ -18,7 +18,7 @@ jobs:
   codegen:
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - run: ./.github/workflows/scripts/install-flutter.sh 3.3.8
     - run: ./.github/workflows/scripts/install-tools.sh
     - run: flutter pub get

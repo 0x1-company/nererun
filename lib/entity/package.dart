@@ -15,5 +15,4 @@ abstract class Package implements _$Package {
 
   factory Package.fromJson(Map<String, dynamic> json) =>
       _$PackageFromJson(json);
-  Map<String, dynamic> toJson() => _$$_PackageToJson(this as _$_Package);
 }

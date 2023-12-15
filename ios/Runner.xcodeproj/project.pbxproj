@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -558,7 +558,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = T97YRW3726;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AV9FQ3YF56;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q7NP395GC3;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Runner/Info-release.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

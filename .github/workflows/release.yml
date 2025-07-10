@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   iOS:
-    runs-on: macos-12
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
       - name: Prepare firebase config
